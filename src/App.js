@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Navigation from './Navigation.js';
+import Navigation from './views/Navigation.js';
+import Content from './views/Content.js'
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     
     <div className="App">
       <Navigation />
-      
+      <Content />
     </div>
   );
 }

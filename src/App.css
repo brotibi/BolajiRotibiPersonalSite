@@ -60,3 +60,13 @@
 .Navigation li {
   margin-right: 10%;
 }
+
+.Showcase {
+  margin: 5%;
+}
+
+.Showcase ul li{
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
