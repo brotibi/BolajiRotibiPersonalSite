@@ -38,6 +38,7 @@
   position: relative;
   align-items: center;
   background: #c2d2ed;
+  box-shadow: 0px 0px 18px #282c34;
 }
 
 .Navigation a {
@@ -69,4 +70,12 @@
   display: inline-block;
   vertical-align: top;
   margin: 10px;
+}
+
+.Showcase ul li:hover{
+  box-shadow: 0px 0px 40px #282c34;
+}
+
+.Resume {
+  margin: 5%;
 }

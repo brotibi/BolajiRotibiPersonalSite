@@ -1,13 +1,52 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../App.css';
+import {Document, Page, pdfjs} from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
-function Showcase() {
+
+function Resume() {
+
     return (
-        <div className='Showcase'>
-            <h1>Mobolaji's Resume</h1>
+        <div className='Resume'>
+            {console.log(__dirname)}
+            <Document file = "MobolajiRotibiResume2019.pdf"
+            onLoadError={console.error}>
+                            <Page pageNumber={1} width = '1000' />
+            </Document>
         </div>
     );
 };
 
-export default Showcase;
+/*
+class Showcase extends Component {
+    state = {
+      numPages: null,
+      pageNumber: 1,
+    }
+   
+    onDocumentLoadSuccess = ({ numPages }) => {
+      this.setState({ numPages });
+    }
+   
+    render() {
+
+      const { pageNumber, numPages } = this.state;
+   
+      return (
+        <div>
+        <h1>Why</h1>
+          <Document
+            file="https://www.eecs.umich.edu/eecs/undergraduate/ugce/CE_Program_Guide.pdf"
+            onLoadSuccess={this.onDocumentLoadSuccess}
+          >
+            <Page pageNumber={1} />
+          </Document>
+          <p>Page {pageNumber} of {numPages}</p>
+        </div>
+      );
+    }
+  }
+  */
+
+export default Resume;
