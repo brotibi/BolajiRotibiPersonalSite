@@ -77,5 +77,8 @@
 }
 
 .Resume {
-  margin: 5%;
+  margin: 1%;
+  position: relative;
+  align-items: right;
+  margin-left: 10%;
 }
