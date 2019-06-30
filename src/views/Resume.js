@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 import {Document, Page, pdfjs} from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -17,36 +17,5 @@ function Resume() {
         </div>
     );
 };
-
-/*
-class Showcase extends Component {
-    state = {
-      numPages: null,
-      pageNumber: 1,
-    }
-   
-    onDocumentLoadSuccess = ({ numPages }) => {
-      this.setState({ numPages });
-    }
-   
-    render() {
-
-      const { pageNumber, numPages } = this.state;
-   
-      return (
-        <div>
-        <h1>Why</h1>
-          <Document
-            file="https://www.eecs.umich.edu/eecs/undergraduate/ugce/CE_Program_Guide.pdf"
-            onLoadSuccess={this.onDocumentLoadSuccess}
-          >
-            <Page pageNumber={1} />
-          </Document>
-          <p>Page {pageNumber} of {numPages}</p>
-        </div>
-      );
-    }
-  }
-  */
 
 export default Resume;
