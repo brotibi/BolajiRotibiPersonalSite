@@ -12,10 +12,10 @@ function KnowItAllCard() {
                 <Card.Body>
                     <Card.Title>Know It All Sports DB</Card.Title>
                     <Card.Text>
-                    For my CS3200 Database Design Final Project me and my team decided to develop a site thatt allowed one to look up stats
-                    for the sport Baseball.
+                        For my CS3200 Database Design Final Project me and my team decided to develop a site thatt allowed one to look up stats
+                        for the sport Baseball.
                     </Card.Text>
-                    <Button href = "https://github.com/robSanders818/sports-database" variant = "primary">GitHub Link</Button>
+                    <Button href="https://github.com/robSanders818/sports-database" variant="primary">GitHub Link</Button>
                 </Card.Body>
             </Card>
         </div>
