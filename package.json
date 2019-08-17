@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master-d build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,8 +32,7 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-       "deploy": "gh-pages -b master -d build",
-   "last 1 safari version"
+      "last 1 safari version"
     ]
   },
   "homepage": "http://bolajirotibi.me"
