@@ -1,22 +1,23 @@
 import React from 'react';
 import '../App.css';
-import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-//import Sidebar from 'react-bootstrap/Sidebar';
 
-function Navigation() {
+const headerStyle = {
+    background: 'white',
+}
+
+
+function Header () {
     return (
-        <div className='Navigation'>
-            <Navbar bg="light" expand="lg" fixed="top">
-                <Navbar.Brand href="/"><h1>Mobolaji Rotibi</h1></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="/"><h2>Projects</h2></Nav.Link>
-                        <Nav.Link href="/resume"><h2>Resume</h2></Nav.Link>
-                        <Nav.Link href="/about"><h2>About Me</h2></Nav.Link>
-                    </Nav>
-                    <Nav className="mr-sm-2">
+        <div className = "Header" style = {headerStyle}>
+            <br/>
+            <Nav className = "justify-content-center">
+                <Nav.Item>
+                    <h1>Mobolaji Rotibi</h1>
+
+                </Nav.Item>
+                </Nav>
+                <Nav className="justify-content-center">
                         <Nav.Link href="https://github.com/brotibi">
                             <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
                                 alt="Github Logo" width="40" height="30" />GitHub</Nav.Link>
@@ -29,10 +30,10 @@ function Navigation() {
                                 alt="LinkedIn Logo"
                                 width="30" height="30" /> LinkedIn</Nav.Link>
                     </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <br/>
+            <hr/>
         </div>
     );
-};
+}
 
-export default Navigation;
+export default Header;
